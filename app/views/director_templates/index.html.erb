@@ -1,0 +1,25 @@
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li>Directors</li>
+  </ul>
+</nav>
+
+<article>
+  <header>
+    <h1>List of directors</h1>
+  </header>
+
+  <ul>
+    <% @list_of_directors.each do |director| %>
+      <li>
+        <a href="/directors/<%= director.id %>">
+          <img src="<%= director.image %>" width="100">
+
+          <%= "#{director.last_name}, #{director.first_name}" %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+
+</article>

@@ -1,0 +1,121 @@
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/movies">Movies</a></li>
+    <li><%= @the_movie.title %></li>
+  </ul>
+</nav>
+
+<article>
+  <header>
+    <h1>
+      <%= @the_movie.title %>
+    </h1>
+  </header>
+  <dl>
+    <dt>
+      Image
+    </dt>
+    <dd>
+      <img src="<%= @the_movie.image %>" style="width:250px;">
+    </dd>
+
+    <dt>
+      Released On
+    </dt>
+    <dd>
+      <%= @the_movie.released_on %>
+    </dd>
+
+    <dt>
+      Nomination Year
+    </dt>
+    <dd>
+      <%= @the_movie.year %>
+      <% if @the_movie.oscar_cohort.present? %>
+        (<%= @the_movie.oscar_cohort.ordinalize %> Oscars)
+      <% end %>
+    </dd>
+
+    <dt>
+      Best Picture Result
+    </dt>
+    <dd>
+      <% if @the_movie.result == "won" %>
+        Won
+      <% elsif @the_movie.result == "did not win" %>
+        Did not win
+      <% elsif @the_movie.result == "nominated" %>
+        Nominated
+      <% else %>
+        Unknown
+      <% end %>
+    </dd>
+
+    <dt>
+      Duration
+    </dt>
+    <dd>
+      <%= @the_movie.duration %> minutes
+    </dd>
+
+    <dt>
+      Description
+    </dt>
+    <dd>
+      <%= simple_format(@the_movie.description) %>
+    </dd>
+
+    <dt>
+      Director
+    </dt>
+    <dd>
+
+      <% d_id = @the_movie.director_id %>
+        
+      <% matching_directors = Director.where({ :id => d_id }) %>
+      
+      <% the_director = matching_directors.at(0) %>
+
+      <% if the_director != nil %>
+        <a href="/directors/<%= the_director.id %>">
+          <%= "#{the_director.first_name} #{the_director.last_name}" %>
+        </a>
+      <% else %>
+        Uh oh! We weren't able to find a director for this movie.
+      <% end %>
+    </dd>
+
+    <dt>
+      Internal ID
+    </dt>
+    <dd>
+      <%= @the_movie.id %>
+    </dd>
+  </dl>
+</article>
+
+<article>
+  <header>
+    <h2>Cast</h2>
+  </header>
+  <ul>
+    <% m_id = @the_movie.id %>
+
+    <% matching_credits = Credit.where({ :movie_id => m_id }) %>
+
+    <% matching_credits.each do |a_credit| %>
+      <% a_id = a_credit.actor_id %>
+      
+      <% matching_actors = Actor.where({ :id => a_id }) %>
+      
+      <% the_actor = matching_actors.at(0) %>
+
+      <% if the_actor.present? %>
+        <li>
+          <a href="/actors/<%= the_actor.id %>"><%= "#{the_actor.first_name} #{the_actor.last_name} (#{a_credit.role})" %></a>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
+</article>

@@ -1,0 +1,61 @@
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/directors">Directors</a></li>
+    <li><%= "#{@the_director.last_name}, #{@the_director.first_name}" %></li>
+  </ul>
+</nav>
+
+<article>
+  <header>
+    <h1>
+      <%= "#{@the_director.first_name} #{@the_director.last_name}" %>
+    </h1>
+  </header>
+  <dl>
+    <dt>
+      Image
+    </dt>
+    <dd>
+      <img src="<%= @the_director.image %>" style="width:250px;">
+    </dd>
+
+    <dt>
+      Dob
+    </dt>
+    <dd>
+      <%= @the_director.dob %>
+    </dd>
+
+    <dt>
+      Bio
+    </dt>
+    <dd>
+      <%= simple_format(@the_director.bio) %>
+    </dd>
+
+    <dt>
+      Internal ID
+    </dt>
+    <dd>
+      <%= @the_director.id %>
+    </dd>
+  </dl>
+</article>
+
+<article>
+  <header>
+    <h2>Filmography</h2>
+  </header>
+  <ul>
+    <% d_id = @the_director.id %>
+
+    <% matching_movies = Movie.where({ :director_id => d_id }) %>
+
+    <% matching_movies.each do |a_movie| %>
+      <li>
+        <a href="/movies/<%= a_movie.id %>"><%= a_movie.title %> (<%= a_movie.year %>)</a>
+      </li>
+    <% end %>
+  </ul>
+</article>

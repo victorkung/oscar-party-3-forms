@@ -1,0 +1,916 @@
+[
+  {
+    "year": "2000 (73rd)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Gladiator",
+        "winner": true
+      },
+      {
+        "film": "Chocolat",
+        "winner": false
+      },
+      {
+        "film": "Crouching Tiger, Hidden Dragon",
+        "winner": false
+      },
+      {
+        "film": "Erin Brockovich",
+        "winner": false
+      },
+      {
+        "film": "Traffic",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2001 (74th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "A Beautiful Mind",
+        "winner": true
+      },
+      {
+        "film": "Gosford Park",
+        "winner": false
+      },
+      {
+        "film": "In the Bedroom",
+        "winner": false
+      },
+      {
+        "film": "The Lord of the Rings: The Fellowship of the Ring",
+        "winner": false
+      },
+      {
+        "film": "Moulin Rouge!",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2002 (75th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Chicago",
+        "winner": true
+      },
+      {
+        "film": "Gangs of New York",
+        "winner": false
+      },
+      {
+        "film": "The Hours",
+        "winner": false
+      },
+      {
+        "film": "The Lord of the Rings: The Two Towers",
+        "winner": false
+      },
+      {
+        "film": "The Pianist",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2003 (76th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "The Lord of the Rings: The Return of the King",
+        "winner": true
+      },
+      {
+        "film": "Lost in Translation",
+        "winner": false
+      },
+      {
+        "film": "Master and Commander: The Far Side of the World",
+        "winner": false
+      },
+      {
+        "film": "Mystic River",
+        "winner": false
+      },
+      {
+        "film": "Seabiscuit",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2004 (77th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Million Dollar Baby",
+        "winner": true
+      },
+      {
+        "film": "The Aviator",
+        "winner": false
+      },
+      {
+        "film": "Finding Neverland",
+        "winner": false
+      },
+      {
+        "film": "Ray",
+        "winner": false
+      },
+      {
+        "film": "Sideways",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2005 (78th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Crash",
+        "winner": true
+      },
+      {
+        "film": "Brokeback Mountain",
+        "winner": false
+      },
+      {
+        "film": "Capote",
+        "winner": false
+      },
+      {
+        "film": "Good Night, and Good Luck",
+        "winner": false
+      },
+      {
+        "film": "Munich",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2006 (79th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "The Departed",
+        "winner": true
+      },
+      {
+        "film": "Babel",
+        "winner": false
+      },
+      {
+        "film": "Letters from Iwo Jima",
+        "winner": false
+      },
+      {
+        "film": "Little Miss Sunshine",
+        "winner": false
+      },
+      {
+        "film": "The Queen",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2007 (80th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "No Country for Old Men",
+        "winner": true
+      },
+      {
+        "film": "Atonement",
+        "winner": false
+      },
+      {
+        "film": "Juno",
+        "winner": false
+      },
+      {
+        "film": "Michael Clayton",
+        "winner": false
+      },
+      {
+        "film": "There Will Be Blood",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2008 (81st)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Slumdog Millionaire",
+        "winner": true
+      },
+      {
+        "film": "The Curious Case of Benjamin Button",
+        "winner": false
+      },
+      {
+        "film": "Frost/Nixon",
+        "winner": false
+      },
+      {
+        "film": "Milk",
+        "winner": false
+      },
+      {
+        "film": "The Reader",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2009 (82nd)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "The Hurt Locker",
+        "winner": true
+      },
+      {
+        "film": "Avatar",
+        "winner": false
+      },
+      {
+        "film": "The Blind Side",
+        "winner": false
+      },
+      {
+        "film": "District 9",
+        "winner": false
+      },
+      {
+        "film": "An Education",
+        "winner": false
+      },
+      {
+        "film": "Inglourious Basterds",
+        "winner": false
+      },
+      {
+        "film": "Precious",
+        "winner": false
+      },
+      {
+        "film": "A Serious Man",
+        "winner": false
+      },
+      {
+        "film": "Up",
+        "winner": false
+      },
+      {
+        "film": "Up in the Air",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2010 (83rd)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "The King's Speech",
+        "winner": true
+      },
+      {
+        "film": "127 Hours",
+        "winner": false
+      },
+      {
+        "film": "Black Swan",
+        "winner": false
+      },
+      {
+        "film": "The Fighter",
+        "winner": false
+      },
+      {
+        "film": "Inception",
+        "winner": false
+      },
+      {
+        "film": "The Kids Are All Right",
+        "winner": false
+      },
+      {
+        "film": "The Social Network",
+        "winner": false
+      },
+      {
+        "film": "Toy Story 3",
+        "winner": false
+      },
+      {
+        "film": "True Grit",
+        "winner": false
+      },
+      {
+        "film": "Winter's Bone",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2011 (84th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "The Artist",
+        "winner": true
+      },
+      {
+        "film": "The Descendants",
+        "winner": false
+      },
+      {
+        "film": "Extremely Loud & Incredibly Close",
+        "winner": false
+      },
+      {
+        "film": "The Help",
+        "winner": false
+      },
+      {
+        "film": "Hugo",
+        "winner": false
+      },
+      {
+        "film": "Midnight in Paris",
+        "winner": false
+      },
+      {
+        "film": "Moneyball",
+        "winner": false
+      },
+      {
+        "film": "The Tree of Life",
+        "winner": false
+      },
+      {
+        "film": "War Horse",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2012 (85th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Argo",
+        "winner": true
+      },
+      {
+        "film": "Amour",
+        "winner": false
+      },
+      {
+        "film": "Beasts of the Southern Wild",
+        "winner": false
+      },
+      {
+        "film": "Django Unchained",
+        "winner": false
+      },
+      {
+        "film": "Les Misérables",
+        "winner": false
+      },
+      {
+        "film": "Life of Pi",
+        "winner": false
+      },
+      {
+        "film": "Lincoln",
+        "winner": false
+      },
+      {
+        "film": "Silver Linings Playbook",
+        "winner": false
+      },
+      {
+        "film": "Zero Dark Thirty",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2013 (86th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "12 Years a Slave",
+        "winner": true
+      },
+      {
+        "film": "American Hustle",
+        "winner": false
+      },
+      {
+        "film": "Captain Phillips",
+        "winner": false
+      },
+      {
+        "film": "Dallas Buyers Club",
+        "winner": false
+      },
+      {
+        "film": "Gravity",
+        "winner": false
+      },
+      {
+        "film": "Her",
+        "winner": false
+      },
+      {
+        "film": "Nebraska",
+        "winner": false
+      },
+      {
+        "film": "Philomena",
+        "winner": false
+      },
+      {
+        "film": "The Wolf of Wall Street",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2014 (87th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Birdman or (The Unexpected Virtue of Ignorance)",
+        "winner": true
+      },
+      {
+        "film": "American Sniper",
+        "winner": false
+      },
+      {
+        "film": "Boyhood",
+        "winner": false
+      },
+      {
+        "film": "The Grand Budapest Hotel",
+        "winner": false
+      },
+      {
+        "film": "The Imitation Game",
+        "winner": false
+      },
+      {
+        "film": "Selma",
+        "winner": false
+      },
+      {
+        "film": "The Theory of Everything",
+        "winner": false
+      },
+      {
+        "film": "Whiplash",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2015 (88th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Spotlight",
+        "winner": true
+      },
+      {
+        "film": "The Big Short",
+        "winner": false
+      },
+      {
+        "film": "Bridge of Spies",
+        "winner": false
+      },
+      {
+        "film": "Brooklyn",
+        "winner": false
+      },
+      {
+        "film": "Mad Max: Fury Road",
+        "winner": false
+      },
+      {
+        "film": "The Martian",
+        "winner": false
+      },
+      {
+        "film": "The Revenant",
+        "winner": false
+      },
+      {
+        "film": "Room",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2016 (89th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Moonlight",
+        "winner": true
+      },
+      {
+        "film": "Arrival",
+        "winner": false
+      },
+      {
+        "film": "Fences",
+        "winner": false
+      },
+      {
+        "film": "Hacksaw Ridge",
+        "winner": false
+      },
+      {
+        "film": "Hell or High Water",
+        "winner": false
+      },
+      {
+        "film": "Hidden Figures",
+        "winner": false
+      },
+      {
+        "film": "La La Land",
+        "winner": false
+      },
+      {
+        "film": "Lion",
+        "winner": false
+      },
+      {
+        "film": "Manchester by the Sea",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2017 (90th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "The Shape of Water",
+        "winner": true
+      },
+      {
+        "film": "Call Me by Your Name",
+        "winner": false
+      },
+      {
+        "film": "Darkest Hour",
+        "winner": false
+      },
+      {
+        "film": "Dunkirk",
+        "winner": false
+      },
+      {
+        "film": "Get Out",
+        "winner": false
+      },
+      {
+        "film": "Lady Bird",
+        "winner": false
+      },
+      {
+        "film": "Phantom Thread",
+        "winner": false
+      },
+      {
+        "film": "The Post",
+        "winner": false
+      },
+      {
+        "film": "Three Billboards outside Ebbing, Missouri",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2018 (91st)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Green Book",
+        "winner": true
+      },
+      {
+        "film": "Black Panther",
+        "winner": false
+      },
+      {
+        "film": "BlacKkKlansman",
+        "winner": false
+      },
+      {
+        "film": "Bohemian Rhapsody",
+        "winner": false
+      },
+      {
+        "film": "The Favourite",
+        "winner": false
+      },
+      {
+        "film": "Roma",
+        "winner": false
+      },
+      {
+        "film": "A Star Is Born",
+        "winner": false
+      },
+      {
+        "film": "Vice",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2019 (92nd)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Parasite",
+        "winner": true
+      },
+      {
+        "film": "Ford v Ferrari",
+        "winner": false
+      },
+      {
+        "film": "The Irishman",
+        "winner": false
+      },
+      {
+        "film": "Jojo Rabbit",
+        "winner": false
+      },
+      {
+        "film": "Joker",
+        "winner": false
+      },
+      {
+        "film": "Little Women",
+        "winner": false
+      },
+      {
+        "film": "Marriage Story",
+        "winner": false
+      },
+      {
+        "film": "1917",
+        "winner": false
+      },
+      {
+        "film": "Once upon a Time...in Hollywood",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2020 (93rd)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Nomadland",
+        "winner": true
+      },
+      {
+        "film": "The Father",
+        "winner": false
+      },
+      {
+        "film": "Judas and the Black Messiah",
+        "winner": false
+      },
+      {
+        "film": "Mank",
+        "winner": false
+      },
+      {
+        "film": "Minari",
+        "winner": false
+      },
+      {
+        "film": "Promising Young Woman",
+        "winner": false
+      },
+      {
+        "film": "Sound of Metal",
+        "winner": false
+      },
+      {
+        "film": "The Trial of the Chicago 7",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2021 (94th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "CODA",
+        "winner": true
+      },
+      {
+        "film": "Belfast",
+        "winner": false
+      },
+      {
+        "film": "Don't Look Up",
+        "winner": false
+      },
+      {
+        "film": "Drive My Car",
+        "winner": false
+      },
+      {
+        "film": "Dune",
+        "winner": false
+      },
+      {
+        "film": "King Richard",
+        "winner": false
+      },
+      {
+        "film": "Licorice Pizza",
+        "winner": false
+      },
+      {
+        "film": "Nightmare Alley",
+        "winner": false
+      },
+      {
+        "film": "The Power of the Dog",
+        "winner": false
+      },
+      {
+        "film": "West Side Story",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2022 (95th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Everything Everywhere All at Once",
+        "winner": true
+      },
+      {
+        "film": "All Quiet on the Western Front",
+        "winner": false
+      },
+      {
+        "film": "Avatar: The Way of Water",
+        "winner": false
+      },
+      {
+        "film": "The Banshees of Inisherin",
+        "winner": false
+      },
+      {
+        "film": "Elvis",
+        "winner": false
+      },
+      {
+        "film": "The Fabelmans",
+        "winner": false
+      },
+      {
+        "film": "Tár",
+        "winner": false
+      },
+      {
+        "film": "Top Gun: Maverick",
+        "winner": false
+      },
+      {
+        "film": "Triangle of Sadness",
+        "winner": false
+      },
+      {
+        "film": "Women Talking",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2023 (96th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Oppenheimer",
+        "winner": true
+      },
+      {
+        "film": "American Fiction",
+        "winner": false
+      },
+      {
+        "film": "Anatomy of a Fall",
+        "winner": false
+      },
+      {
+        "film": "Barbie",
+        "winner": false
+      },
+      {
+        "film": "The Holdovers",
+        "winner": false
+      },
+      {
+        "film": "Killers of the Flower Moon",
+        "winner": false
+      },
+      {
+        "film": "Maestro",
+        "winner": false
+      },
+      {
+        "film": "Past Lives",
+        "winner": false
+      },
+      {
+        "film": "Poor Things",
+        "winner": false
+      },
+      {
+        "film": "The Zone of Interest",
+        "winner": false
+      }
+    ]
+  },
+  {
+    "year": "2024 (97th)",
+    "category": "BEST PICTURE",
+    "nominations": [
+      {
+        "film": "Anora",
+        "winner": true
+      },
+      {
+        "film": "The Brutalist",
+        "winner": false
+      },
+      {
+        "film": "A Complete Unknown",
+        "winner": false
+      },
+      {
+        "film": "Conclave",
+        "winner": false
+      },
+      {
+        "film": "Dune: Part Two",
+        "winner": false
+      },
+      {
+        "film": "Emilia Pérez",
+        "winner": false
+      },
+      {
+        "film": "I'm Still Here",
+        "winner": false
+      },
+      {
+        "film": "Nickel Boys",
+        "winner": false
+      },
+      {
+        "film": "The Substance",
+        "winner": false
+      },
+      {
+        "film": "Wicked",
+        "winner": false
+      }
+    ]
+  }
+]

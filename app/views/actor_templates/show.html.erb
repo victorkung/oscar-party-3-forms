@@ -1,0 +1,67 @@
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/actors">Actors</a></li>
+    <li><%= "#{@the_actor.last_name}, #{@the_actor.first_name}" %></li>
+  </ul>
+</nav>
+
+<article>
+  <header>
+    <h1>
+      <%= "#{@the_actor.first_name} #{@the_actor.last_name}" %>
+    </h1>
+  </header>
+  <dl>
+    <dt>
+      Image
+    </dt>
+    <dd>
+      <img src="<%= @the_actor.image %>" style="width:250px;">
+    </dd>
+
+    <dt>
+      Dob
+    </dt>
+    <dd>
+      <%= @the_actor.dob %>
+    </dd>
+
+    <dt>
+      Bio
+    </dt>
+    <dd>
+      <%= simple_format(@the_actor.bio) %>
+    </dd>
+
+    <dt>
+      Internal ID
+    </dt>
+    <dd>
+      <%= @the_actor.id %>
+    </dd>
+  </dl>
+</article>
+
+<article>
+  <header>
+    <h2>Filmography</h2>
+  </header>
+  <ul>
+    <% a_id = @the_actor.id %>
+
+    <% matching_credits = Credit.where({ :actor_id => a_id }) %>
+
+    <% matching_credits.each do |a_credit| %>
+      <% m_id = a_credit.movie_id %>
+
+      <% matching_movies = Movie.where({ :id => m_id }) %>
+
+      <% the_movie = matching_movies.at(0) %>
+
+      <li>
+        <a href="/movies/<%= the_movie.id %>"><%= the_movie.title %> (<%= the_movie.year %>)</a>
+      </li>
+    <% end %>
+  </ul>
+</article>
