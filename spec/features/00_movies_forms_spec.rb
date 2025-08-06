@@ -143,7 +143,7 @@ describe "/backdoor/movies" do
   end
 end
 
-describe "/backdoor/movies/[ID]/edit" do
+describe "/backdoor/movies/[ID]" do
   before do
     allow_any_instance_of(ApplicationController).to receive(:authenticate_or_request_with_http_basic).and_return(true)
   end
@@ -161,7 +161,7 @@ describe "/backdoor/movies/[ID]/edit" do
     movie.director_id = director.id
     movie.save
 
-    visit "/backdoor/movies/#{movie.id}/edit"
+    visit "/backdoor/movies/#{movie.id}"
 
     expect(page).to have_css("form")
     expect(page).to have_field("Title", with: movie.title)
@@ -169,7 +169,7 @@ describe "/backdoor/movies/[ID]/edit" do
   end
 end
 
-describe "/backdoor/movies/[ID]/edit" do
+describe "/backdoor/movies/[ID]" do
   before do
     allow_any_instance_of(ApplicationController).to receive(:authenticate_or_request_with_http_basic).and_return(true)
   end
@@ -187,7 +187,7 @@ describe "/backdoor/movies/[ID]/edit" do
     movie.director_id = director.id
     movie.save
 
-    visit "/backdoor/movies/#{movie.id}/edit"
+    visit "/backdoor/movies/#{movie.id}"
 
     fill_in "Title", with: "Updated Movie"
     fill_in "Year", with: 2024

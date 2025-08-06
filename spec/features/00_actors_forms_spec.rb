@@ -111,7 +111,7 @@ describe "/backdoor/actors" do
   end
 end
 
-describe "/backdoor/actors/[ID]/edit" do
+describe "/backdoor/actors/[ID]" do
   before do
     allow_any_instance_of(ApplicationController).to receive(:authenticate_or_request_with_http_basic).and_return(true)
   end
@@ -122,7 +122,7 @@ describe "/backdoor/actors/[ID]/edit" do
     actor.last_name = "Robbie"
     actor.save
 
-    visit "/backdoor/actors/#{actor.id}/edit"
+    visit "/backdoor/actors/#{actor.id}"
 
     expect(page).to have_css("form")
     expect(page).to have_field("First Name", with: actor.first_name)
@@ -130,7 +130,7 @@ describe "/backdoor/actors/[ID]/edit" do
   end
 end
 
-describe "/backdoor/actors/[ID]/edit" do
+describe "/backdoor/actors/[ID]" do
   before do
     allow_any_instance_of(ApplicationController).to receive(:authenticate_or_request_with_http_basic).and_return(true)
   end
@@ -141,7 +141,7 @@ describe "/backdoor/actors/[ID]/edit" do
     actor.last_name = "Robbie"
     actor.save
 
-    visit "/backdoor/actors/#{actor.id}/edit"
+    visit "/backdoor/actors/#{actor.id}"
 
     fill_in "Actor First Name", with: "America"
     fill_in "Actor Last Name", with: "Ferrera"

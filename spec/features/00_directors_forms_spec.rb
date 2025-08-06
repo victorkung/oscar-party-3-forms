@@ -132,7 +132,7 @@ describe "/backdoor/directors" do
   end
 end
 
-describe "/backdoor/directors/[ID]/edit" do
+describe "/backdoor/directors/[ID]" do
   before do
     allow_any_instance_of(ApplicationController).to receive(:authenticate_or_request_with_http_basic).and_return(true)
   end
@@ -143,7 +143,7 @@ describe "/backdoor/directors/[ID]/edit" do
     director.last_name = "Schmoe"
     director.save
 
-    visit "/backdoor/directors/#{director.id}/edit"
+    visit "/backdoor/directors/#{director.id}"
 
     expect(page).to have_css("form")
     expect(page).to have_field("First Name", with: director.first_name)
@@ -151,7 +151,7 @@ describe "/backdoor/directors/[ID]/edit" do
   end
 end
 
-describe "/backdoor/directors/[ID]/edit" do
+describe "/backdoor/directors/[ID]" do
   before do
     allow_any_instance_of(ApplicationController).to receive(:authenticate_or_request_with_http_basic).and_return(true)
   end
@@ -162,7 +162,7 @@ describe "/backdoor/directors/[ID]/edit" do
     director.last_name = "Schmoe"
     director.save
 
-    visit "/backdoor/directors/#{director.id}/edit"
+    visit "/backdoor/directors/#{director.id}"
 
     fill_in "Director First Name", with: "Jane"
     fill_in "Director Last Name", with: "Doe"
