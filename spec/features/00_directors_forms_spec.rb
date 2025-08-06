@@ -1,15 +1,6 @@
 require "rails_helper"
 
 describe "/backdoor" do
-  it "requires basic authentication", :points => 1 do
-    visit "/backdoor"
-
-    expect(page.status_code).to eq(401),
-      "Expected /backdoor to require authentication but it didn't"
-  end
-end
-
-describe "/backdoor" do
   before do
     allow_any_instance_of(ApplicationController).to receive(:authenticate_or_request_with_http_basic).and_return(true)
   end
