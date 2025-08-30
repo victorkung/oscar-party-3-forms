@@ -17,30 +17,30 @@
   </header>
 
   <table>
-    <thead>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @list_of_directors.each do |a_director| %>
+      <thead>
         <tr>
-          <td>
-            <%= a_director.first_name %>
-          </td>
-          <td>
-            <%= a_director.last_name %>
-          </td>
-          <td>
-            <a href="/backdoor/delete_director/<%= a_director.id %>">
-              Delete
-            </a>
-          </td>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Actions</th>
         </tr>
-      <% end %>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+        <% @list_of_directors.each do |a_director| %>
+          <tr>
+            <td>
+              <%= a_director.first_name %>
+            </td>
+            <td>
+              <%= a_director.last_name %>
+            </td>
+            <td>
+              <a href="/backdoor/directors/<%= a_director.id %>">Edit</a> 
+              |
+              <a href="/backdoor/delete_director/<%= a_director.id %>">Delete</a>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
 
 </article>

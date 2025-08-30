@@ -1,0 +1,36 @@
+<h1>Edit Director #<%= @the_director.id %></h1>
+
+<p>
+  <a href="/directors/<%= @the_director.id %>" target="_blank">View Director Details</a>
+</p>
+
+<form action="/backdoor/modify_director/<%= @the_director.id %>" method="post">
+  <div>
+    <label for="director_first_name_box">Director First Name</label>
+    <input type="text" id="director_first_name_box" name="query_first_name" value="<%= @the_director.first_name %>">
+  </div>
+
+  <div>
+    <label for="director_last_name_box">Director Last Name</label>
+    <input type="text" id="director_last_name_box" name="query_last_name" value="<%= @the_director.last_name %>">
+  </div>
+
+  <div>
+    <label for="director_dob">Date of Birth</label>
+    <input type="date" id="director_dob" name="query_dob" value="<%= @the_director.dob %>">
+  </div>
+
+  <div>
+    <label for="director_bio">Bio</label>
+    <textarea id="director_bio" name="query_bio" rows="3"><%= @the_director.bio %></textarea>
+  </div>
+
+  <div>
+    <label for="director_image">Image URL</label>
+    <input type="text" id="director_image" name="query_image" value="<%= @the_director.image %>">
+  </div>
+
+  <button type="submit">
+    Update Director
+  </button>
+</form>
