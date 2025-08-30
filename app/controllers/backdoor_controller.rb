@@ -22,4 +22,19 @@ class BackdoorController < ApplicationController
     end
   end
 
+  def directors_index
+    @list_of_directors = Director.all
+
+    render({ :template => "backdoor_templates/directors_index" })
+  end
+
+  def destroy_director
+    the_id = params.fetch("path_id")
+    the_director = Director.where({ :id => the_id }).at(0)
+
+    the_director.destroy
+
+    redirect_to("/backdoor/directors", { :notice => "Director deleted successfully." })
+  end
+
 end
