@@ -22,4 +22,16 @@ Rails.application.routes.draw do
   post("/backdoor/modify_director/:path_id", { :controller => "backdoor", :action => "update_director" })
   get("/backdoor/delete_director/:path_id", { :controller => "backdoor", :action => "destroy_director" })
 
+  get("/backdoor/actors", { :controller => "backdoor", :action => "actors_index" })
+  get("/backdoor/actors/:path_id", { :controller => "backdoor", :action => "actor_show" })
+  post("/backdoor/insert_actor", { :controller => "backdoor", :action => "create_actor" })
+  post("/backdoor/modify_actor/:path_id", { :controller => "backdoor", :action => "update_actor" })
+  get("/backdoor/delete_actor/:path_id", { :controller => "backdoor", :action => "destroy_actor" })
+
+  get("/backdoor/movies", { :controller => "backdoor", :action => "movies_index" })
+  get("/backdoor/movies/:path_id", { :controller => "backdoor", :action => "movie_show" })
+  post("/backdoor/insert_movie", { :controller => "backdoor", :action => "create_movie" })
+  post("/backdoor/modify_movie/:path_id", { :controller => "backdoor", :action => "update_movie" })
+  get("/backdoor/delete_movie/:path_id", { :controller => "backdoor", :action => "destroy_movie" })
+
 end

@@ -9,13 +9,13 @@
 <nav aria-label="breadcrumb">
   <ul>
     <li><a href="/backdoor">Admin</a></li>
-    <li>Manage directors</li>
+    <li>Manage actors</li>
   </ul>
 </nav>
 
 <article>
   <header>
-    <h1>Directors</h1>
+    <h1>Actors</h1>
   </header>
 
   <table>
@@ -27,18 +27,18 @@
       </tr>
     </thead>
     <tbody>
-      <% @list_of_directors.each do |a_director| %>
+      <% @list_of_actors.each do |a_actor| %>
         <tr>
           <td>
-            <%= a_director.first_name %>
+            <%= a_actor.first_name %>
           </td>
           <td>
-            <%= a_director.last_name %>
+            <%= a_actor.last_name %>
           </td>
           <td>
-            <a href="/backdoor/directors/<%= a_director.id %>">Edit</a> 
+            <a href="/backdoor/actors/<%= a_actor.id %>">Edit</a> 
             |
-            <a href="/backdoor/delete_director/<%= a_director.id %>">Delete</a>
+            <a href="/backdoor/delete_actor/<%= a_actor.id %>">Delete</a>
           </td>
         </tr>
       <% end %>

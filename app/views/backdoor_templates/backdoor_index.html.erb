@@ -1,6 +1,8 @@
 <nav>
   <ul>
     <li><a href="/backdoor/directors">Manage Directors</a></li>
+    <li><a href="/backdoor/actors">Manage Actors</a></li>
+    <li><a href="/backdoor/movies">Manage Movies</a></li>
   </ul>
 </nav>
 
@@ -49,4 +51,110 @@
     </button>
   </form>
 
+</article>
+
+
+<article>
+  <header>
+    <h2>Create Actor</h2>
+  </header>
+  <form action="/backdoor/insert_actor" method="post">
+    <div>
+      <label for="actor_first_name_box">Actor First Name</label>
+      <input type="text" id="actor_first_name_box" name="query_first_name">
+    </div>
+
+    <div>
+      <label for="actor_last_name_box">Actor Last Name</label>
+      <input type="text" id="actor_last_name_box" name="query_last_name">
+    </div>
+
+    <div>
+      <label for="actor_dob_box">Date of Birth</label>
+      <input type="date" id="actor_dob_box" name="query_dob">
+    </div>
+
+    <div>
+      <label for="actor_bio_box">Bio</label>
+      <textarea id="actor_bio_box" name="query_bio" rows="3"></textarea>
+    </div>
+
+    <div>
+      <label for="actor_image_box">Image URL</label>
+      <input type="text" id="actor_image_box" name="query_image">
+    </div>
+
+    <button type="submit">
+      Create Actor
+    </button>
+  </form>
+</article>
+
+<article>
+  <header>
+    <h2>Create Movie</h2>
+  </header>
+  <form action="/backdoor/insert_movie" method="post">
+    <div>
+      <label for="movie_title">Title</label>
+      <input type="text" id="movie_title" name="query_title" required>
+    </div>
+
+    <div>
+      <label for="movie_year">Year</label>
+      <input type="number" id="movie_year" name="query_year">
+    </div>
+
+    <div>
+      <label for="movie_duration">Duration (minutes)</label>
+      <input type="number" id="movie_duration" name="query_duration">
+    </div>
+
+    <div>
+      <label for="movie_description">Description</label>
+      <textarea id="movie_description" name="query_description" rows="3"></textarea>
+    </div>
+
+    <div>
+      <label for="movie_image">Image URL</label>
+      <input type="text" id="movie_image" name="query_image">
+    </div>
+
+    <div>
+      <label for="movie_director">Director</label>
+      <select id="movie_director" name="query_director_id">
+        <option value="">Choose a director...</option>
+
+        <% @list_of_directors.all.each do |director| %>
+          <option value="<%= director.id %>">
+              <%= "#{director.first_name} #{director.last_name}" %>
+            </a>
+          </li>
+        <% end %> 
+
+      </select>
+    </div>
+
+    <div>
+      <label for="movie_released_on">Release Date</label>
+      <input type="date" id="movie_released_on" name="query_released_on">
+    </div>
+
+    <div>
+      <label for="movie_oscar_cohort">Oscar Cohort</label>
+      <input type="number" id="movie_oscar_cohort" name="query_oscar_cohort" placeholder="e.g., 73, 88, 96">
+    </div>
+
+    <fieldset>
+      <legend>Result</legend>
+      <input type="radio" id="movie_result_nominated" name="query_result" value="nominated" checked>
+      <label for="movie_result_nominated">Nominated</label>
+      <input type="radio" id="movie_result_won" name="query_result" value="won">
+      <label for="movie_result_won">Won</label>
+      <input type="radio" id="movie_result_did_not_win" name="query_result" value="did not win">
+      <label for="movie_result_did_not_win">Did not win</label>
+    </fieldset>
+
+    <button type="submit">Create Movie</button>
+  </form>
 </article>

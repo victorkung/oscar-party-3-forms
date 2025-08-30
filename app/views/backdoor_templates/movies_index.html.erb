@@ -9,36 +9,40 @@
 <nav aria-label="breadcrumb">
   <ul>
     <li><a href="/backdoor">Admin</a></li>
-    <li>Manage directors</li>
+    <li>Manage movies</li>
   </ul>
 </nav>
 
 <article>
   <header>
-    <h1>Directors</h1>
+    <h1>Movie</h1>
   </header>
 
   <table>
     <thead>
       <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Result</th>
         <th>Actions</th>
       </tr>
     </thead>
     <tbody>
-      <% @list_of_directors.each do |a_director| %>
+      <% @list_of_movies.each do |a_movie| %>
         <tr>
           <td>
-            <%= a_director.first_name %>
+            <%= a_movie.title %>
           </td>
           <td>
-            <%= a_director.last_name %>
+            <%= a_movie.year %>
           </td>
           <td>
-            <a href="/backdoor/directors/<%= a_director.id %>">Edit</a> 
+            <%= a_movie.result %>
+          </td>
+          <td>
+            <a href="/backdoor/movies/<%= a_movie.id %>">Edit</a> 
             |
-            <a href="/backdoor/delete_director/<%= a_director.id %>">Delete</a>
+            <a href="/backdoor/delete_movie/<%= a_movie.id %>">Delete</a>
           </td>
         </tr>
       <% end %>
