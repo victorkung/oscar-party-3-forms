@@ -10,6 +10,9 @@ class BackdoorController < ApplicationController
     the_director = Director.new
     the_director.first_name = params.fetch("query_first_name")
     the_director.last_name = params.fetch("query_last_name")
+    the_director.dob = params.fetch("query_dob")
+    the_director.bio = params.fetch("query_bio")
+    the_director.image = params.fetch("query_image")
 
     if the_director.valid?
       the_director.save
